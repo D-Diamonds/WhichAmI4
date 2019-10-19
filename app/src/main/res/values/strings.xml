@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WhichAmI4</string>
+    <string name="title_activity_display_game">DisplayGameActivity</string>
 </resources>

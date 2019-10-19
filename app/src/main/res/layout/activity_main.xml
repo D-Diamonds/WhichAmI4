@@ -35,34 +35,230 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
 
                 <TextView
-                    android:id="@+id/question1"
+                    android:id="@+id/question1Text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Question 1:\nWhich of the following do you like?" />
+                    android:text="Question 1:\nHow old are you?"
+                    android:textSize="18sp" />
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal">
 
-                    <CheckBox
-                        android:id="@+id/checkBox9"
+                    <SeekBar
+                        android:id="@+id/ageSeekBar"
+                        style="@style/Widget.AppCompat.SeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="31"
+                        android:progress="1" />
+
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/ageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question2Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/question2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Question 2:\nWhich color do you like most?"
+                    android:textSize="18sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/yellowBtn"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:padding="2dp"
+                        android:scaleType="centerInside"
+                        android:tag="pokemon"
+                        app:srcCompat="@android:color/holo_orange_light" />
+
+                    <ImageButton
+                        android:id="@+id/whiteBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:padding="2dp"
+                        android:tag="overwatch"
+                        app:srcCompat="@color/colorPrimary" />
+
+                    <ImageButton
+                        android:id="@+id/greenBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:padding="2dp"
+                        android:tag="league"
+                        app:srcCompat="@color/colorPrimaryDark" />
+
+                    <ImageButton
+                        android:id="@+id/purpleBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#000000"
+                        android:padding="2dp"
+                        android:tag="destiny"
+                        app:srcCompat="@android:color/holo_purple" />
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question3Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/question3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Question 3:\nWhich of the following would you do while it rains?"
+                    android:textSize="18sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal">
 
                     <CheckBox
-                        android:id="@+id/checkBox10"
+                        android:id="@+id/runningBox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CheckBox" />
+                        android:layout_weight="1"
+                        android:tag="pokemon2"
+                        android:text="Run" />
+
+                    <CheckBox
+                        android:id="@+id/workoutBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="overwatch3"
+                        android:text="Workout" />
+
+                    <CheckBox
+                        android:id="@+id/sleepingBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="league4"
+                        android:text="Sleep" />
+
+                    <CheckBox
+                        android:id="@+id/cookingBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="destiny5"
+                        android:text="Cook" />
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question4Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/question4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Question 4:\nDo you like sleep?"
+                    android:textSize="18sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Switch
+                        android:id="@+id/sleepSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="switch"
+                        android:text="No" />
                 </TableRow>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question5Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/question5Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Question 5:\nWhich dinner appetizer do you like the most?"
+                    android:textSize="18sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Spinner
+                        android:id="@+id/foodDropDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/appetizers"
+                        android:gravity="center_horizontal"
+                        android:spinnerMode="dialog" />
+                </TableRow>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Done" />
 
         </LinearLayout>
     </ScrollView>
